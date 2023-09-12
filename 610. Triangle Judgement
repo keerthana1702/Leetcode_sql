@@ -1,0 +1,5 @@
+# Write your MySQL query statement below
+#as the property of triangle if the condition satisifies then itll print Yes or No
+select *,
+if ((x + y > z) and (x + z > y) and (z + y > x), 'Yes', 'No') as triangle
+from Triangle; 
