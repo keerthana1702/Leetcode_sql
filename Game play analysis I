@@ -1,0 +1,3 @@
+#Game play analysis I
+#Filter out the repeated player id, pick up the minimum dates in the event date and rename it as first login now do that for all the other player ids
+select distinct player_id, min(event_date) as first_login from Activity group by player_id 
